@@ -1,0 +1,84 @@
+
+@import url(https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Literata);
+body{
+    background: #e0e0e0;
+    font-family: 'crimson', sans-serif;
+}
+
+.container{
+    width: 330px;
+    height: 470px;
+    border-radius: 10px;
+    background: linear-gradient(145deg, #d8a9a9, #ffc9c9);
+    margin: 20px auto;
+    padding: 22px 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 27px 27px 54px #896b6b,
+               -27px -27px 54px #ffffff;
+}
+
+.container .result{
+width: 100%;
+height: 100px;
+border-radius: 10px;
+background: #e0e0e0;
+box-shadow: 7px 7px 15px #c1c1c1,
+           -7px 7px 15px #ffffff ;
+}
+
+.container .result p{
+   font-size: 25pt;
+   overflow-y: auto;
+   text-align: right;
+   color: #696cff;
+   padding-left: 10px;
+   margin-right: 7px;
+}
+
+.container .buttons .button, .container .buttons .num-button{
+    color: black;
+    cursor: grab;
+    text-align: center;
+    width: 60px;
+    font-size: 18px;
+    height: 57px;
+    display: grid;
+    place-content: center;
+    border-radius: 10px;
+    background: #e0e0e0;
+    box-shadow:7px 7px 15px #c1c1c1,
+              -7px 7px 15px #ffffff;
+
+}
+
+.container .buttons{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 1em;
+}
+
+.button:hover{
+    color: #696cff;
+    border-radius: 28px;
+    background: #d11a1a;
+    box-shadow:7px 7px 15px #a31444,
+              -7px 7px 15px #ff2020 ;
+}
+
+.container .buttons .zero{
+    grid-column: 1/3;
+    width: 120px;
+    font-size: 20px;
+    color: black;
+    border-radius: 10px;
+    background: #e0e0e0;
+    box-shadow:7px 7px 15px #c1c1c1,
+               -7px 7px 15px #ffffff; ;
+}
+
+.action-btn{
+    color: black;
+    font-weight: bold;
+}
